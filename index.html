@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasa Burger</title>
+</head>
+
+<body>
+
+    <h1>🍔 Brasa Burger</h1>
+
+    <h2>Nosso Cardápio</h2>
+    
+
+    <div class="produto">
+        <img src="imagens/x-burger.jpg.jpg" alt="X-Burger">
+    <h3>X-Burger</h3>
+    <p>Pão, carne, queijo e molho especial</p>
+    <strong>R$ 20,00</strong>
+    <button onclick="adicionarProduto('X-Burger', 20)">Adicionar</button>
+
+   <div class="produto">
+    <img src="imagens/batata.jpg" alt="Batata Frita">
+    <h3>Batata Frita</h3>
+    <p>Batata frita crocante</p>
+    <strong>R$ 10,00</strong>
+    <button onclick="adicionarProduto('Batata Frita', 10)">Adicionar</button>
+
+    <div class="produto"    <h3>Coca-Cola</h3>
+
+    <p>Coca-Cola lata 350m<img src="imagens/coca-cola.jpg" alt="Coca-Cola">l</p>
+    <strong>R$ 6,00</strong>
+    <button onclick="adicionarProduto('Coca-Cola', 6)">Adicionar</button>
+
+</body>
+<script src="script.js"></script>
+</html><div id="carrinho">
+    <h2>🛒 Seu Pedido</h2>
+    <p>Nenhum produto adicionado.</p>
+</div><button onclick="enviarPedido()">📲 Enviar pedido</button><div id="mesa">
+    <label for="numeroMesa">Número da mesa:</label>
+    <input type="number" id="numeroMesa" placeholder="Ex: 8">
+</div><div id="observacoes">
+    <label for="descricaoPedido">📝 Observações do pedido:</label>
+    <textarea id="descricaoPedido" placeholder="Ex: sem cebola, sem tomate..."></textarea>
+</div>
